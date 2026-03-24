@@ -1,0 +1,30 @@
+{
+  "splats": [
+    {
+      "filename": "sketch-of-pond-and-house.spz",
+      "transform": {
+        "translation": [
+          0,
+          0.8173543214797974,
+          0
+        ],
+        "rotation": [
+          180,
+          0,
+          0
+        ],
+        "quaternion": [
+          1,
+          0,
+          0,
+          6.123233995736766e-17
+        ],
+        "scale": 1.332944631576538
+      }
+    }
+  ],
+  "metadata": {
+    "exportTimestamp": "2026-03-23T23:04:00.360Z",
+    "spzExportVersion": 3
+  }
+}
