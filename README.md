@@ -1,46 +1,56 @@
 # Scene Viewer
+A standalone viewer for your exported Marble scene, powered by SparkJS.
 
-A standalone viewer for your exported Marble scene, powered by [SparkJS](https://sparkjs.dev).
+---
 
 ## Quickstart
 
-To view your scene locally, you'll need to serve the files over HTTP (opening `index.html` directly won't work).
+To view your scene locally, you **must serve the files over HTTP**.  
+Opening `index.html` directly in your browser will not work due to browser security restrictions.
 
-### Using Python
+---
 
-The easiest way is to use Python's built-in HTTP server:
+## Using VS Code Live Server (Recommended)
 
-```bash
-# Navigate to this folder in your terminal
-cd /path/to/your/exported/scene
+### Step 1: Install Live Server
+1. Open **VS Code**
+2. Go to **Extensions** (`Cmd + Shift + X` on Mac / `Ctrl + Shift + X` on Windows)
+3. Search for: `Live Server`
+4. Install the extension by *Ritwick Dey*
 
-# Start the server
-python3 -m http.server 8000
-```
+---
 
-Then open [http://localhost:8000](http://localhost:8000) in your browser.
+### Step 2: Open Project Folder
+- Open the folder containing your scene viewer files in VS Code
 
-### Using Node.js
+---
 
-Alternatively, if you have Node.js installed:
+### Step 3: Run the Viewer
+1. Locate `index.html` in the file explorer
+2. Right-click the file
+3. Select **"Open with Live Server"**
 
-```bash
-npx serve .
-```
+---
 
-## Files
+###  Result
+- Your default browser will open automatically
+- The scene viewer will load correctly with all assets
 
-- `index.html` – The viewer HTML file
-- `spark.module.min.js` – The SparkJS rendering library
-- `scene.json` – Scene manifest containing transforms and file references
-- `*.spz` – Compressed gaussian splat files
-- `*.glb` – 3D mesh files (if applicable)
+---
 
-## Resources
+## Downloading assets
+Make sure to download the assets pretaining to the project from this box folder: https://duke.box.com/s/55ij1vxuj5mc2faj4t39wm8c1msrc398
 
-For more information on SparkJS and its capabilities, here are some places to start:
 
-- **SparkJS Documentation**: https://sparkjs.dev/docs
-- **SparkJS Examples (Demos)**: https://sparkjs.dev/examples/ 
-- **SparkJS Examples (Source Code)**: https://github.com/sparkjsdev/spark/tree/main/examples
-- **SparkJS Discord**: https://discord.gg/DxubkP8D
+
+## Troubleshooting
+
+- **Blank screen?**
+  - Make sure all asset paths are correct
+  - Check the browser console (`Inspect → Console`) for errors
+
+- **Live Server not showing option?**
+  - Restart VS Code after installing the extension
+
+---
+
